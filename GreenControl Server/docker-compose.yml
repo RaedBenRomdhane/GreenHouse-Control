@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    container_name: mosquitto
+    ports:
+      - "1883:1883"
+    volumes:
+      - ./mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
+    restart: unless-stopped
+
+  mqtt-broker:
+    build:
+      context: ./app
+    container_name: mqtt-broker
+    depends_on:
+      - mosquitto
+    volumes:
+      - ./app:/usr/src/app
+      - shared-data:/usr/src/app/shared  # Shared volume for data files
+    command: ["python", "mqtt-broker.py"]
+
+  web-server:
+    build:
+      context: ./app
+    container_name: web-server
+    ports:
+      - "80:80"
+    volumes:
+      - ./app:/usr/src/app
+      - shared-data:/usr/src/app/shared  # Shared volume for data files
+    command: ["python", "web-server.py"]
+
+volumes:
+  shared-data:  # Named Docker volume for shared data

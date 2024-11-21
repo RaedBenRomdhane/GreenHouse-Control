@@ -1,0 +1,49 @@
+1732220753: mosquitto version 2.0.20 starting
+1732220753: Config loaded from /mosquitto/config/mosquitto.conf.
+1732220753: Opening ipv4 listen socket on port 1883.
+1732220753: mosquitto version 2.0.20 running
+1732220905: mosquitto version 2.0.20 terminating
+1732220905: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1732220905: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1732220905: Warning: File /mosquitto/data//mosquitto.db.new owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/data//mosquitto.db.new`.
+1732220905: Warning: File /mosquitto/data//mosquitto.db.new group is not mosquitto. Future versions will refuse to load this file.
+1732220911: mosquitto version 2.0.20 starting
+1732220911: Config loaded from /mosquitto/config/mosquitto.conf.
+1732220911: Opening ipv4 listen socket on port 1883.
+1732220911: mosquitto version 2.0.20 running
+1732220955: mosquitto version 2.0.20 terminating
+1732220955: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1732220955: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1732220955: Warning: File /mosquitto/data//mosquitto.db.new owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/data//mosquitto.db.new`.
+1732220955: Warning: File /mosquitto/data//mosquitto.db.new group is not mosquitto. Future versions will refuse to load this file.
+1732220969: mosquitto version 2.0.20 starting
+1732220969: Config loaded from /mosquitto/config/mosquitto.conf.
+1732220969: Opening ipv4 listen socket on port 1883.
+1732220969: mosquitto version 2.0.20 running
+1732222770: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1732222770: Warning: File /mosquitto/data/mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data/mosquitto.db.new`.
+1732222770: Warning: File /mosquitto/data/mosquitto.db.new owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/data/mosquitto.db.new`.
+1732222770: Warning: File /mosquitto/data/mosquitto.db.new group is not mosquitto. Future versions will refuse to load this file.
+1732222805: mosquitto version 2.0.20 terminating
+1732222805: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1732222805: Warning: File /mosquitto/data/mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data/mosquitto.db.new`.
+1732222805: Warning: File /mosquitto/data/mosquitto.db.new owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/data/mosquitto.db.new`.
+1732222805: Warning: File /mosquitto/data/mosquitto.db.new group is not mosquitto. Future versions will refuse to load this file.
+1732222835: mosquitto version 2.0.20 starting
+1732222835: Config loaded from /mosquitto/config/mosquitto.conf.
+1732222835: Opening ipv4 listen socket on port 1883.
+1732222835: mosquitto version 2.0.20 running
+1732222835: New connection from 172.18.0.4:58505 on port 1883.
+1732222835: New client connected from 172.18.0.4:58505 as auto-D4C69EA5-843D-2138-D135-A74E7E94AF55 (p2, c1, k60).
+1732223051: New connection from 172.18.0.1:58608 on port 1883.
+1732223051: New client connected from 172.18.0.1:58608 as gateway-ext (p2, c1, k15).
+1732223375: Client gateway-ext has exceeded timeout, disconnecting.
+1732224636: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1732224636: Warning: File /mosquitto/data/mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data/mosquitto.db.new`.
+1732224636: Warning: File /mosquitto/data/mosquitto.db.new owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/data/mosquitto.db.new`.
+1732224636: Warning: File /mosquitto/data/mosquitto.db.new group is not mosquitto. Future versions will refuse to load this file.
