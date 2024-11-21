@@ -1,50 +1,104 @@
-# Welcome to Green Control👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# 🌱 Green Control Mobile App 🌱
 
-## Get started
+**Green Control** is a mobile application designed to monitor and manage conditions inside greenhouses, ensuring crop quality while minimizing energy usage. The app allows you to:  
 
-1. Install dependencies
+- Monitor internal and external environmental conditions (temperature, humidity, air quality, and soil moisture).  
+- Adjust thresholds for optimal greenhouse management.  
+- Receive alerts for extreme environmental conditions.  
+- Control greenhouse actions like ventilation, heating, cooling, and irrigation remotely.  
 
-   ```bash
-   npm install
-   ```
+<div style="display:flex;flex-direction:column;justify-content:canter;" align="center">
+    <div>
+        <img  width="200" src="./images/home.png alt="Home Page">
+        <img  width="200" src="./images/config.png" alt="Config Page">
+        <img  width="200" src="./images/config0.png" alt="Config Page">
+    </div>
+    <br/>
+    <div>
+        <img  width="200" src="./images/monitor.png" alt="Monitoring">
+        <img  width="200" src="./images/external.png" alt="Monitoring">
+    </div>
+</div>
 
-2. Start the app
 
-   ```bash
-    npx expo start
-   ```
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🚀 Getting Started  
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Prerequisites  
+Ensure you have the following installed:  
+- [Node.js](https://nodejs.org/)  
+- [Expo CLI](https://expo.dev/)  
 
-## Get a fresh project
+---
 
-When you're ready, run:
+### Install Dependencies  
+
+Run the following command in the terminal:  
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+### Start the App  
 
-To learn more about developing your project with Expo, look at the following resources:
+Start the development environment with:  
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npx expo start
+```
 
-## Join the community
+In the output, you'll find options to open the app in:  
+1. A **development build**  
+2. **Android emulator**  
+3. **iOS simulator**  
+4. **Expo Go**, a limited sandbox for trying out app development with Expo  
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 📂 File Structure  
+
+The main files and folders you'll interact with are:  
+
+- **`app/`**: Contains all the app screens and components.  
+- **`assets/`**: Stores images, fonts, and other static files.  
+- **`package.json`**: Manages dependencies and scripts for the project.  
+
+---
+
+## 🛠️ Features  
+
+- **Threshold Adjustments**: Modify the temperature, humidity, and pollution limits.  
+- **Real-Time Monitoring**: View both internal and external conditions live.  
+- **Alerts**: Get notified when conditions exceed thresholds.  
+- **Energy Efficiency**: Optimize actions to reduce energy usage (e.g., use external ventilation if outdoor conditions are suitable).  
+
+---
+
+## 📱 Mobile App Use Case  
+
+The app connects to the hardware system inside the greenhouse:  
+
+- **Internal PCB**: Detects environmental data (temperature, humidity, air quality, and soil moisture).  
+- **External PCB**: Collects data from outside the greenhouse.  
+
+The system compares internal and external conditions and takes appropriate actions, such as:  
+- Activating ventilation.  
+- Adjusting climate control.  
+- Managing irrigation.  
+
+---
+
+## 👨‍💻 Contribution  
+
+Contributions, issues, and feature requests are welcome!  
+
+---
+
+## 📜 License  
+
+This project is licensed under the MIT License.  

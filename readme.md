@@ -8,12 +8,12 @@ This repository is divided into the following folders:
 
 1. **Mobile App**: 
    A cross-platform app built with Expo, allowing users to monitor and adjust greenhouse thresholds, view real-time data, and receive alerts for extreme conditions.
-   - 📂 **[Mobile App Folder](./Mobile App)**
+   - 📂 **[Mobile App Folder](./Mobile_App)**
    - 📄 **[Mobile App README](./Mobile_App/README.md)**
 
 2. **Server**: 
    A Dockerized server that connects the mobile app to two PCBs (internal and external), facilitating data exchange and decision-making for greenhouse control.
-   - 📂 **[Server Folder](./GreenControl Server)**
+   - 📂 **[Server Folder](./GreenControl_Server)**
    - 📄 **[Server README](./Server/README.md)**
 
 3. **ESP32 (Arduino Code) for Internal PCB**: 
@@ -25,6 +25,22 @@ This repository is divided into the following folders:
    Code for the ESP32 microcontroller managing sensors and actuators in the greenhouse.
    - 📂 **[ESP32 Folder](./External_PCB)**
    - 📄 **[ESP32 README](./External_PCB/README.md)**
+
+
+<div style="display:flex;flex-direction:column;justify-content:canter;" align="center">
+    <div>
+        <img  width="600" src="./Images/Diagramme.png"alt="Home Page">
+    </div>
+    <br/>
+    <div>
+        <img  width="400" src="./images/external PCB live simulation.png" alt="External PCB Sim">
+        <img  width="400" src="./images/interal PCB live simulation.png" alt="Config Page">
+    </div>
+    <br/>
+    <div>
+        <img  width="400" src="./images/photo of the prototype.jpg" alt="Monitoring">
+    </div>
+</div>
 
 ## How It Works
 
