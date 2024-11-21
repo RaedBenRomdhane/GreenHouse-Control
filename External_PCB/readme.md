@@ -1,11 +1,12 @@
 
-# Green Control System (ESP32) - README
+# Green Control System (ESP32) - The External PCB
 
 ## Overview
 
+# You will find the design circuit folder
+
 This project is part of the **Green Control System**, designed to optimize conditions in greenhouses. It features two PCBs:
-1. **Internal PCB**: Measures temperature, humidity, pollution levels, and soil moisture inside the greenhouse.
-2. **External PCB**: Monitors external environmental conditions and provides comparative data.
+**External PCB**: Monitors external environmental conditions and provides comparative data.
 
 The ESP32 microcontroller acts as the bridge between the hardware sensors and the mobile app. It collects data, determines actions, and communicates with the server for remote monitoring and control.
 
