@@ -33,12 +33,12 @@ This repository is divided into the following folders:
     </div>
     <br/>
     <div>
-        <img  width="400" src="./images/external_PCB.png" alt="External PCB Sim">
-        <img  width="400" src="./images/interal_PCB.png" alt="Config Page">
+        <img  width="400" src="./Images/external_PCB.png" alt="External PCB Sim">
+        <img  width="400" src="./Images/interal_PCB.png" alt="Config Page">
     </div>
     <br/>
     <div>
-        <img  width="400" src="./images/prototype.jpg" alt="Monitoring">
+        <img  width="400" src="./Images/prototype.jpg" alt="Monitoring">
     </div>
 </div>
 
