@@ -8,25 +8,26 @@ This repository is divided into the following folders:
 
 1. **Mobile App**: 
    A cross-platform app built with Expo, allowing users to monitor and adjust greenhouse thresholds, view real-time data, and receive alerts for extreme conditions.
-   - 📂 **[Mobile App Folder](./Mobile_App)**
-   - 📄 **[Mobile App README](./Mobile_App/README.md)**
 
 2. **Server**: 
    A Dockerized server that connects the mobile app to two PCBs (internal and external), facilitating data exchange and decision-making for greenhouse control.
-   - 📂 **[Server Folder](./GreenControl_Server)**
-   - 📄 **[Server README](./Server/README.md)**
 
 3. **ESP32 (Arduino Code) for Internal PCB**: 
    Code for the ESP32 microcontroller managing sensors and actuators in the greenhouse.
-   - 📂 **[ESP32 Folder](./Internal_PCB)**
-   - 📄 **[ESP32 README](./Internal_PCB/README.md)**
 
 3. **ESP32 (Arduino Code) for External PCB**: 
    Code for the ESP32 microcontroller managing sensors and actuators in the greenhouse.
-   - 📂 **[ESP32 Folder](./External_PCB)**
-   - 📄 **[ESP32 README](./External_PCB/README.md)**
+
+### Decision Making Algorithm
+
+<div style="display:flex;flex-direction:column;justify-content:canter;" align="center">
+    <div>
+        <img  width="600" src="./Images/decision.jpg"alt="Decision making">
+    </div>
+</div>
 
 
+### Project Design
 <div style="display:flex;flex-direction:column;justify-content:canter;" align="center">
     <div>
         <img  width="600" src="./Images/Diagramme.png"alt="Home Page">
