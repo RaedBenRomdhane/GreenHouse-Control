@@ -47,3 +47,15 @@ To fix this, use `chmod 0700 /mosquitto/data/mosquitto.db.new`.
 To fix this, use `chmod 0700 /mosquitto/data/mosquitto.db.new`.
 1732224636: Warning: File /mosquitto/data/mosquitto.db.new owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/data/mosquitto.db.new`.
 1732224636: Warning: File /mosquitto/data/mosquitto.db.new group is not mosquitto. Future versions will refuse to load this file.
+1732226437: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1732226437: Warning: File /mosquitto/data/mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data/mosquitto.db.new`.
+1732226437: Warning: File /mosquitto/data/mosquitto.db.new owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/data/mosquitto.db.new`.
+1732226437: Warning: File /mosquitto/data/mosquitto.db.new group is not mosquitto. Future versions will refuse to load this file.
+1732227405: Client auto-D4C69EA5-843D-2138-D135-A74E7E94AF55 closed its connection.
+1732227406: mosquitto version 2.0.20 terminating
+1732227406: Saving in-memory database to /mosquitto/data/mosquitto.db.
+1732227406: Warning: File /mosquitto/data/mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data/mosquitto.db.new`.
+1732227406: Warning: File /mosquitto/data/mosquitto.db.new owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/data/mosquitto.db.new`.
+1732227406: Warning: File /mosquitto/data/mosquitto.db.new group is not mosquitto. Future versions will refuse to load this file.

@@ -64,6 +64,44 @@ def get_recent_data(namef, num_values=100):
 
 
 class CustomHandler(BaseHTTPRequestHandler):
+    def do_POST(self):
+        # Step 1: Get content length from headers
+        content_length = int(self.headers.get('Content-Length', 0))
+        
+        # Step 2: Read the body of the request
+        body = self.rfile.read(content_length)
+        
+        try:
+            # Step 3: Parse the JSON data
+            data = json.loads(body)
+            
+            # Step 4: Validate the JSON keys
+            required_keys = {"tempmoy", "hummoy", "pollmax", "moistmin"}
+            if not required_keys.issubset(data.keys()):
+                self.send_response(400)
+                self.send_header("Content-Type", "application/json")
+                self.end_headers()
+                self.wfile.write(json.dumps({"error": "Missing required keys"}).encode("utf-8"))
+                return
+            
+            # Step 5: Save data to "threshold.json"
+            with open(f"{SHARED_FOLDER}/threshold.json", "w") as json_file:
+                json.dump(data, json_file, indent=4)
+            
+            # Step 6: Send a success response
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.end_headers()
+            self.wfile.write(json.dumps({"message": "Data saved successfully"}).encode("utf-8"))
+        
+        except json.JSONDecodeError:
+            # Handle JSON parsing errors
+            self.send_response(400)
+            self.send_header("Content-Type", "application/json")
+            self.end_headers()
+            self.wfile.write(json.dumps({"error": "Invalid JSON format"}).encode("utf-8"))
+
+
     def do_GET(self):
         if self.path.split("?")[0] == '/get_ext_data':
             try:

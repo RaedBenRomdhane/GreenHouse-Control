@@ -10,6 +10,28 @@ TOPIC_INT = "sscs/int-esp"
 TOPICS = [("sscs/server-form-ext", 0), ("sscs/server-form-int", 0)]
 
 
+def read_threshold_data():
+    try:
+        # Step 1: Open the "threshold.json" file
+        with open(f"{SHARED_FOLDER}/threshold.json", "r") as json_file:
+            data = json.load(json_file)
+        
+        # Step 2: Extract values
+        tempmoy = data.get("tempmoy")
+        hummoy = data.get("hummoy")
+        pollmax = data.get("pollmax")
+        moistmin = data.get("moistmin")
+        
+        # Step 3: Return the values
+        return tempmoy, hummoy, pollmax, moistmin
+    
+    except FileNotFoundError:
+        print("Error: 'threshold.json' file not found.")
+        return None, None, None, None
+    except json.JSONDecodeError:
+        print("Error: 'threshold.json' file contains invalid JSON.")
+        return None, None, None, None
+
 
 
 def log_sensor_data_ext(new_temperature, new_humidity, new_ppm):
@@ -85,7 +107,27 @@ def on_message(client, userdata, message):
         new_ppm =  json_data["ppm"]
 
         if message.topic == 'sscs/server-form-ext':
-            result = client.publish(TOPIC_INT, data)
+            tempmoy, hummoy, pollmax, moistmin = read_threshold_data()
+
+            if tempmoy is not None:
+                json_data.update({
+                    "tempmoy": tempmoy,
+                    "hummoy": hummoy,
+                    "pollmax": pollmax,
+                    "moistmin": moistmin
+                })
+            else:
+                json_data.update({
+                    "tempmoy": 37,
+                    "hummoy": 50,
+                    "pollmax": 75,
+                    "moistmin": 30
+                })
+
+            data2 = json.dumps(json_data)
+
+
+            result = client.publish(TOPIC_INT, data2)
             # Check the result of the publish
             if result.rc == mqtt.MQTT_ERR_SUCCESS:
                 print(f"Message sent to topic '{TOPIC_INT}': {data}")
